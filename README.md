@@ -12,7 +12,7 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 Review System: Allow users to leave reviews and ratings for properties.
 - Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
 
-## Tech Stack
+## Technology Stack
 
 | Component       | Technologies                                                                 |
 |-----------------|------------------------------------------------------------------------------|
