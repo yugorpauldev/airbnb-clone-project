@@ -31,3 +31,36 @@ Review System: Allow users to leave reviews and ratings for properties.
 - **Database Administrator:** Manages database design, indexing, and optimizations.
 - **DevOps Engineer:** Handles deployment, monitoring, and scaling of the backend services.
 - **QA Engineer:** Ensures the backend functionalities are thoroughly tested and meet quality standards
+
+
+## Database Design
+
+- **Users**(name,id,email,password)
+- **properties**(type, address, id, owner_id,room_nr)
+- **booking**(id, start_date_price)
+- **reviews**(property_id,rating, date)
+- **payments**(property_id,id,date)
+
+- **Users ↔ properties**: A user books properties
+- **booking ↔ properties**: A booking has a property
+- **review ↔ properties**: A review has a propery
+
+## Feature Breakdown
+
+- **User Management:** Implement a secure system for user registration, authentication, identity verification, and profile management for both guests and hosts.
+
+- **Property Management:** Develop features for property listing creation, editing, photo/video uploads, pricing settings, availability calendars, and retrieval by search filters.
+
+- **Booking System:** Create a reservation mechanism that allows guests to request or instantly book properties, while enabling hosts to manage and approve bookings.
+
+- **Payment Processing:** Integrate a secure payment gateway to process guest payments, manage refunds, split payouts to hosts, and maintain transaction records.
+
+- **Search and Discovery:** Implement a searchable catalog of properties with location-based queries, date filters, price ranges, amenities, and real-time availability.
+
+- **Messaging System:** Build an in-app messaging platform to enable secure communication between guests and hosts before and after booking.
+
+- **Review and Rating System:** Allow guests and hosts to leave reviews for each other after a stay, with moderation tools to handle disputes and inappropriate content.
+
+- **Notifications and Alerts:** Send real-time notifications and email alerts for booking confirmations, reminders, cancellations, messages, and promotional offers.
+
+- **Calendar and Availability Management:** Provide hosts with a calendar to manage availability, block dates, set minimum/maximum stay requirements, and sync with external calendars.
